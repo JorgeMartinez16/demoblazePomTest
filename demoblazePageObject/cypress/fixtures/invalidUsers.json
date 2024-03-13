@@ -1,0 +1,13 @@
+{
+  "users": [
+    { "username": "user3", "password": "password3" },
+    { "username": "123jj", "password": "ytt123" },
+    { "username": "usuarios", "password": "contraseñass" },
+    { "username": "12345000", "password": "123450003" },
+    { "username": "invalidUser1", "password": "invalidPassword1" },
+    { "username": "user@domain.com", "password": "invalid123" },
+    { "username": "admin", "password": "admin123" },
+    { "username": "testuser", "password": "testpassword" },
+    { "username": "invalid123", "password": "password123" }
+  ]
+}
