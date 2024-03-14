@@ -27,21 +27,21 @@ class loginPage extends basePage {
   }
 
   loginWithValidUsers() {
-    return cy.fixture("validUsers.json").then((data) => {
-      const users = data.users;
-      return users.map((user) => ({
-        username: user.username,
-        password: user.password,
+    return cy.fixture("users.json").then((data) => {
+      const validUsers = data.validUsers;
+      return validUsers.map((validUsers) => ({
+        username: validUsers.username,
+        password: validUsers.password,
       }));
     });
   }
 
   loginWithInvalidusers(){
-    return cy.fixture("invalidUsers.json").then((data) => {
-      const users = data.users;
-      return users.map((user) => ({
-        username: user.username, 
-        password: user.password,
+    return cy.fixture("users.json").then((data) => {
+      const invalidUser = data.invalidUser;
+      return invalidUser.map((invalidUser) => ({
+        username: invalidUser.username, 
+        password: invalidUser.password,
       }))
     })
   }
