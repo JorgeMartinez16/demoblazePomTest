@@ -2,9 +2,9 @@
     "validUsers": [
       
       { "username": "12345", "password": "12345" },
-      { "username": "user", "password" : "password"},
       { "username": "123", "password" : "123"},
-      { "username": "admin", "password" : "admin"}
+      { "username": "admin", "password" : "admin"},
+      { "username": "Username", "password": "password" }
     ],
     "invalidUser": [
       { "username": "user3", "password": "password3" },

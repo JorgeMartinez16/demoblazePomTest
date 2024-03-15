@@ -8,6 +8,14 @@ class loginPage extends basePage {
     this.getLoginButton().click({ force: true });
   }
 
+  openLoginPage() {
+    this.homePage();
+    /* cy.visit('https://www.demoblaze.com/'); */
+    cy.get("#login2", { timeout: 3000 })
+      .should("be.visible")
+      .click({ force: true });
+  }
+
   getUserNameField() {
     // sigo teniendo dudas de este locator del modal
     cy.get("#logInModal.modal.fade", { timeout: 5000 })
