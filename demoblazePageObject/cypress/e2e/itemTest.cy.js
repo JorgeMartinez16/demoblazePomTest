@@ -5,15 +5,29 @@ import LoginPage from "../page/loginPage";
 describe("Login Test", () => {
   const itemPage = new ItemPage();
   const loginPage = new LoginPage();
+  const itemName = ""; 
   beforeEach(() => {
     const basePage = new BasePage();
     basePage.homePage();
   });
 
-  it("should click to categories", () => {
-    loginPage.openLoginPage();
-    loginPage.login('123', '123');
-    itemPage.chooseCategories();
+  it("should choose phones", () => {
+    cy.fixture('items.json').then((data) => {
+      const phones = data.phones;
+      itemPage.chooseCategories('Phones');
+      phones.forEach((phone) => {
+        itemPage.choosePhones(phone.itemName); 
+      });
+    });
   });
-});
 
+  it('should choose laptops,', () => {
+    cy.fixture('items.json').then((data) => {
+      const laptops = data.laptops;
+      laptops.forEach((laptop) => {
+        itemPage.chooseLaptops(laptop.itemName);
+      });
+    });
+  });
+
+});

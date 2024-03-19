@@ -1,0 +1,18 @@
+{
+  "phones": [
+    { "itemName": "Samsung galaxy s6" },
+    { "itemName": "Nokia lumia 1520" },
+    { "itemName": "Nexus 6" },
+    { "itemName": "Iphone 6 32gb" }
+  ],
+  "laptops": [
+    { "itemName": "Sony vaio i5" },
+    { "itemName": "Sony vaio i7" },
+    { "itemName": "MacBook air" },
+    { "itemName": "Dell i7 8gb" }
+  ],
+  "monitors": [
+    { "itemName": "Apple monitor 24" },
+    { "itemName": "ASUS Full HD" }
+  ]
+}
